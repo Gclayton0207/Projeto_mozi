@@ -31,8 +31,30 @@ body {
        .texto-card{
         justify-content: center;
        }
-
-
-
-
-   
+       #cartaz {
+        display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+          margin: 5% , 5%;
+       }
+       .cards{
+        list-style: none;
+        padding: 20px;
+        color: white;
+        text-align: center;
+        border-radius: 20px;
+        position: relative;
+        margin-top: 5%;
+        height: 500px;
+        
+    }
+    .cards-texto {
+        font-size: 15px;
+    }
+    .cards-img {
+        height: 500px;
+        width: 400px;
+        display: block;
+    }
+    
