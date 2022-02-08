@@ -19,7 +19,7 @@ body {
   --color-1: #9488ef;
   --color-2: rgb(28, 0, 48);
   --color-3: #38404b;
-  width: 4git50px;
+  width: 450px;
   height: 200px;
   background: var(--color-3);
   box-shadow: -10px -10px var(--color-1), 15px 10px var(--color-2);
