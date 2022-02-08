@@ -1,7 +1,7 @@
 
 const api = "api_key=7054674b47bae17d91d790355e1e3dc4";
 const base_url = "https://api.themoviedb.org/3";
-const final_url = base_url + "/discover/movie?certification_country=BR&certification.lte=L&sort_by=popularity.desc&with_genres=16&"+api+"&language=pt-BR";
+const final_url = base_url + "/discover/movie?certification_country=BR&sort_by=popularity.desc&"+api+"&language=pt-BR";
 const img_url = "https://image.tmdb.org/t/p/w500";
 const search_url = base_url + "/search/movie?certification_country=BR&certification.lte=L&sort_by=popularity.desc&"+api+"&language=pt-BR";
 const form = document.getElementById("pesquisa");

@@ -9,44 +9,59 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
-    <script src="../js/junior.js" defer></script>
+    <script src="../../controllers/js/junior.js" defer></script>
     <title>Perfil Junior</title>
 </head>
 
 
 <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <a class="navbar-brand" href="./index.html">
-            <img src="../imgs/logo.png" alt="Logo" style="width:80px;">
-        </a>
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./sobre.html">Sobre</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./recuperacao_Senha.html">Esqueci minha senha</a>
-            </li>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="./index.html">
+                <img src="../imgs/logo.png" alt="Logo" style="width:80px;">
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./recuperacao_Senha.html">Esqueci minha senha</a>
+                </li>
 
-        </ul>
-        <form class="d-flex" id="pesquisa">
-            <input class="form-control me-2" id="filme" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-    </nav>
+            </ul>
+            <form class="d-flex" id="pesquisa">
+                <input class="form-control me-2" id="search" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+        </nav>
+    </header>
     <div class="card">
         <div class="card__content">
             <div class="texto-card">
                 <h1>Bem vindo ao perfil Junior</h1>
                 <h5>os melhores filmes infantis para voce curtir</h5>
-
             </div>
         </div>
     </div>
+    <main id="main">
+        <div class="movie">
+            <img src="../imgs/logo.png">
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <span class="green">9.8</span>
+            </div>
+            <div class="overview">
+                <h3>Overview</h3>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate recusandae molestiae sapiente
+                placeat sed voluptas error, odit quam hic voluptates.
+            </div>
+        </div>
 
 
+    </main>
 </body>
 
 </html>
