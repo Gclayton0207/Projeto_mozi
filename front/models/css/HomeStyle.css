@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
 *{  
-    margin: 0px; 
+    margin: 0px;
+    font-family: "Righteous", cursive;
+    
 }
 
 body {
@@ -19,15 +23,48 @@ img{
         height: auto;
         padding-top: 10px;
 }
+section{
+    text-align: center;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+h3{
+    display: inline;
+    
+}
+strong{
+    font-size: larger;
+}
+
 main{
   width: 100%;
 }
 
 form{
     
-    
+    background-color: rgb(228, 165, 70) ;
     width:25%;
     border: solid;
     border-radius: 5%;
     padding: 2%;
+    
+}
+.infos{
+    position: relative;
+    border: solid;
+    left: 60% ;
+    width: 250px;
+ 
+}
+#textoInfos{
+    padding-top: 10px;
+    
+    display: block;
+}
+#btnInfos{
+    height: 50px;
+    width: 200px;
+    margin-left: 8%;
+    
 }
