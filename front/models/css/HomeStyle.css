@@ -1,14 +1,17 @@
-*{
-     
-    margin: 0;
-    
+*{  
+    margin: 0px; 
 }
 
 body {
-   
     background: -webkit-gradient(linear, left top, left bottom, from(#38404b), to(#9488ef)) fixed;
-
 }
+
+figure{
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
 img{
         max-width: 10%;
         max-height: 10%;
@@ -16,9 +19,15 @@ img{
         height: auto;
         padding-top: 10px;
 }
-figure{
-    display: flex;
-    justify-content: center;
-    height: fit-content;
-  
+main{
+  width: 100%;
+}
+
+form{
+    
+    
+    width:25%;
+    border: solid;
+    border-radius: 5%;
+    padding: 2%;
 }
