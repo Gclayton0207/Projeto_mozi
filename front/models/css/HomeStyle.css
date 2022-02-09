@@ -8,6 +8,7 @@
 
 body {
     background: -webkit-gradient(linear, left top, left bottom, from(#38404b), to(#9488ef)) fixed;
+    
 }
 
 figure{
@@ -37,9 +38,19 @@ section{
     width: 100%;
     display: inline-flex;
     justify-content: center;
+    position: relative;
+    top: 3.5rem;
+}
+
+.filmes{
+    width: 60%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
 }
 h3{
     display: inline;
+
     
 }
 strong{
@@ -47,9 +58,20 @@ strong{
 }
 
 main{
-  width: 100%;
+  width: 95%;
+  margin: 4rem;
+  margin-top: 3rem;
+  margin-left: 0.8rem;
 }
-
+.infos{
+    position: relative;
+    border: solid;
+    left: 40.5% ;
+    width: 250px;
+    top: 3rem;
+    
+ 
+}
 form{
     
     background-color: rgb(228, 165, 70) ;
@@ -57,15 +79,9 @@ form{
     border: solid;
     border-radius: 5%;
     padding: 2%;
-    
+    margin-right: 2rem;
 }
-.infos{
-    position: relative;
-    border: solid;
-    left: 41% ;
-    width: 250px;
- 
-}
+
 #textoInfos{
     padding-top: 10px;
     
@@ -80,12 +96,21 @@ form{
 h3{
     margin-top: -1rem;
 }
+.imgFilme{
+    position: relative;
+    top: 9rem;
+    left: 3rem;
+    width:max-content;
+}
 @media (max-width: 1290px) {
    h3{
        margin: 3rem;
 }
 form{
     width: 25rem;
+}
+.infos{
+    margin-left: -3rem;
 }
 @media(max-width:680px){
     h3{
@@ -96,12 +121,20 @@ form{
         width: 22rem;
     }
     .infos{
-        margin-left: -4px;
+        margin-left: -5rem;
     }
 }
 @media(max-width:460px){
     .infos{
-        margin-left: -5rem;
+        margin-left: -7rem;
+    }
+    form{
+        width:16rem;    
     }
 }
+}
+@media(max-width:330px){
+    form{
+        width: 12rem;
+    }
 }
