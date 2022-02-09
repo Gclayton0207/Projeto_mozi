@@ -126,3 +126,24 @@ main{
   border-radius: 20px;
   display: block;
 }
+#tags{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+}
+
+.tag{
+  padding:10px 20px;
+  background-color: #FBBE98;
+  border-radius:50px;
+  margin: 5px;
+  display: inline-block;
+  cursor: pointer;
+
+}
+.tag.selecionada{
+  background-color: var(--secondary-color);
+}

@@ -7,6 +7,7 @@ const search_url = base_url + "/search/movie?certification_country=BR&certificat
 const form = document.getElementById("pesquisa");
 const search = document.getElementById("search");
 const main = document.getElementById('main');
+
 getMovies(final_url);
 
 function getMovies(url){
