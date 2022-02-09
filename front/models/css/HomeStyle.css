@@ -8,6 +8,10 @@
 
 body {
     background: -webkit-gradient(linear, left top, left bottom, from(#38404b), to(#9488ef)) fixed;
+    display: flex;
+    justify-content: space-around
+}
+#siteSemFotos{
     
 }
 
@@ -15,7 +19,7 @@ figure{
     display: flex;
     justify-content: center;
     height: fit-content;
-    width: 39%;
+    width: 0 ;
     margin: -90px;
     margin-left: 28%;
     position: absolute;
