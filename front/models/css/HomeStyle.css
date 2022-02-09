@@ -14,6 +14,12 @@ figure{
     display: flex;
     justify-content: center;
     height: fit-content;
+    width: 39%;
+    margin: -90px;
+    margin-left: 28%;
+    position: absolute;
+    margin-bottom: 8px;
+    top: 85px;
 }
 
 img{
@@ -22,6 +28,9 @@ img{
         width: auto;
         height: auto;
         padding-top: 10px;
+}
+figure img{
+    max-width: 8rem;
 }
 section{
     text-align: center;
@@ -53,7 +62,7 @@ form{
 .infos{
     position: relative;
     border: solid;
-    left: 60% ;
+    left: 41% ;
     width: 250px;
  
 }
@@ -67,4 +76,32 @@ form{
     width: 200px;
     margin-left: 8%;
     
+}
+h3{
+    margin-top: -1rem;
+}
+@media (max-width: 1290px) {
+   h3{
+       margin: 3rem;
+}
+form{
+    width: 25rem;
+}
+@media(max-width:680px){
+    h3{
+        margin-top: 8rem;
+        
+    }
+    form{
+        width: 22rem;
+    }
+    .infos{
+        margin-left: -4px;
+    }
+}
+@media(max-width:460px){
+    .infos{
+        margin-left: -5rem;
+    }
+}
 }
