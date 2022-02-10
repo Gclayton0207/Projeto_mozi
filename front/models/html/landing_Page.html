@@ -7,17 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  
+  <!-- <link rel="stylesheet" href="../css/reset.css"> -->
   <link rel="stylesheet" href="../css/style-landing.css">
   <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script defer src="../../controllers/js/junior.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-  
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+  <!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script> -->
   <script defer src="../../controllers/js/form-cep.js"></script>
+  <script defer src="../../controllers/js/form-validacao.js"></script>
   <title>Landing Page</title>
 </head>
 
@@ -51,15 +57,15 @@
   <section id="Carrosel">
     <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="2000">
-          <img src="../imgs/avengers.png" class="d-block w-100 imagem-carrossel-um"
+        <div class="carousel-item active" data-bs-interval="1000">
+          <img src="../imgs/avengers.png" class="d-block w-100 h-10 imagem-carrossel-um"
             alt="Imagem promocional filme Avengers">
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
+        <div class="carousel-item" data-bs-interval="1000">
           <img src="../imgs/fast.jpg" class="d-block w-100 imagem-carrossel-dois"
             alt="Imagem promocional filme Velozes e Furiosos">
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
+        <div class="carousel-item" data-bs-interval="1000">
           <img src="../imgs/harry.jpg" class="d-block w-100 imagem-carrossel-tres"
             alt="Imagem promocional filme Harry Potter">
         </div>
@@ -108,27 +114,32 @@
   <section id="formulario" class="form-inline  formulario" role="form">
     <form class="row g-1">
       <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">Nome</label>
-        <input type="text" class="form-control" id="nome">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" class="form-control input" placeholder="Ex: João" id="nome" required>
+        <span class="erro"></span>
       </div>
       <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">RG</label>
-        <input type="number" class="form-control" id="rg">
+        <label for="rg" class="form-label">RG</label>
+        <input type="number" class="form-control input" placeholder="Ex: 123456789" id="rg" required>
+        <span class="erro" id="rg-erro"></span>
       </div>
       <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control input" placeholder="Ex: joaoMozi@mozi.com" id="email" required>
+        <span class="erro"></span>
       </div>
       <div class="col-md-6">
-        <label for="inputPassword4" class="form-label">Senha</label>
-        <input type="password" class="form-control" id="senha">
+        <label for="senha" class="form-label">Senha</label>
+        <input type="password" class="form-control input" id="senha" placeholder="Digite sua senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos." required>
+        <span class="erro"></span>
       </div>
       <div class="col-md-6">
-        <label for="inputPassword4" class="form-label">Confirme sua senha</label>
-        <input type="password" class="form-control" id="confirmasenha">
+        <label for="conofirmasenha" class="form-label">Confirme sua senha</label>
+        <input type="password" class="form-control input" id="confirmasenha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos." required>
+        <span id="erro-senha"></span>
       </div>
       <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">CEP</label>
+        <label for="cep" class="form-label">CEP</label>
         <input type="number" class="form-control" id="cep" required>
         <span id="erro-cep"></span>
       </div>
@@ -150,7 +161,7 @@
       </div>
       <div class="col-md-2">
         <label for="inputZip" class="form-label">Número</label>
-        <input type="number" class="form-control" id="Número">
+        <input type="number" class="form-control" id="Número" required>
       </div>
       <div class="col-md-6">
         <label for="inputCity" class="form-label">Complemento</label>
@@ -173,7 +184,7 @@
         </div>
       </div>
       <div class="col-6">
-        <button type="submit" class="btn btn-primary">Assinar</button>
+        <button class="btn btn-primary" id="enviar">Assinar</button>
       </div>
     </form>
   </section>
