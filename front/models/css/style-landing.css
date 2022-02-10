@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+body {
+  background-color: #111927;
+  background-image: radial-gradient(
+      at 47% 33%,
+      hsl(214.74, 15%, 26%) 0,
+      transparent 59%
+    ),
+    radial-gradient(at 82% 65%, hsl(246.99, 76%, 74%) 0, transparent 55%);
+  font-family: "Righteous", cursive;
+  color: white;
+}
+:root{
+  --primary-color: #38404B;
+  --secondary-color: #9488ef;
+}
+
+
+
+
+**** 
+.cor-fundo{
+    background-color: #38404B !important;
+}
+.card-largura{
+max-width: 18rem;
+} 
+
+.imagem-carrossel-um {
+object-fit: cover;
+object-position: 0 50%;
+height: 400px;
+}
+
+.imagem-carrossel-dois {
+    object-fit: cover;
+    object-position: 0 5%;
+    height: 400px;
+}
+
+.imagem-carrossel-tres {
+    object-fit: cover;
+    object-position: 0 10%;
+    height: 400px;
+}
+
+.fonte-titulo{
+font-family: 'Pacifico', cursive;
+color: #9488EF;   
+
+}
+
+.cor-especial{
+    color: #9488EF !important;
+
+}
+
+.botao-cor-especial{
+    background-color: #9488EF;
+    ;
+    color:whitesmoke;
+}
+.borda-cor-especial{
+    border-color: #9488EF ;
+}
+
+.card-posicao-imagem{
+object-fit: cover;
+height: 300px;
+object-position: 0 5%
+
+
+}
+.card {
+    --color-1: #9488ef;
+    --color-2: rgb(28, 0, 48);
+    --color-3: #38404b;
+    width: 650px;
+    height: 500px;
+    background: var(--color-3);
+    box-shadow: -10px -10px var(--color-1), 15px 10px var(--color-2);
+    transition: box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out;
+    margin: 1% auto;
+     
+    
+  }
+  
+  .card:hover {
+    box-shadow: -10.275px -10.275px var(--color-1), 15.4px 10.275px var(--color-2);
+    transform: scale(1.025);
+  }
+
+.formulario{
+    --color-1: #9488ef;
+    --color-2: rgb(28, 0, 48);
+    --color-3: #38404b;
+    width: 1000px;
+    height: 550px;
+    background: var(--color-3);
+    box-shadow: -10px -10px var(--color-1), 15px 10px var(--color-2);
+    transition: box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    padding-left: 15px;
+}
+.formulario-titulo{
+   text-align: center;
+}
+
+.faq{
+    --color-1: #9488ef;
+    --color-2: rgb(28, 0, 48);
+    --color-3: #38404b;
+    background: var(--color-3);
+    box-shadow: -10px -10px var(--color-1), 15px 10px var(--color-2);
+    transition: box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out;
+  
+}
+
+ 
