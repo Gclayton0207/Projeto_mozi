@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
 body {
   background-color: #111927;
   background-image: radial-gradient(
@@ -108,7 +109,10 @@ object-position: 0 5%
 .formulario-titulo{
    text-align: center;
 }
-
+span {
+  display: none;
+  color: red;
+}
 .faq{
     --color-1: #9488ef;
     --color-2: rgb(28, 0, 48);
