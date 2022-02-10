@@ -8,6 +8,16 @@ const form = document.getElementById("pesquisa");
 const search = document.getElementById("search");
 const main = document.getElementById('main');
 const tagsEl = document.getElementById("tags");
+const prev = document.getElementById("prev");
+const next = document.getElementById("next");
+const atual = document.getElementById("atual");
+
+var paginaAtual = 1;
+var proximaPagina= 2;
+var paginaAnterior = 3;
+var ultimaUrl = '';
+var totalPaginas= 100;
+
 
 const generos = [{
         "id": 28,
@@ -154,9 +164,29 @@ function BotaoLimpar(){
 getMovies(final_url);
 
 function getMovies(url) {
+    ultimaUrl = url; 
     fetch(url).then(res => res.json()).then(data => {
         if(data.results.length !== 0){
             showMovies(data.results);
+            paginaAtual = data.page;
+            proximaPagina= paginaAtual + 1;
+            paginaAnterior = paginaAtual - 1;
+            totalPaginas = data.total_pages;
+
+            atual.innerText = paginaAtual;
+
+            if(paginaAtual <=1){
+                prev.classList.add('disable');
+                next.classList.remove('disable');
+            }else if(paginaAtual >= ultimaUrl){
+                prev.classList.remove('disable');
+                next.classList.add('disable');
+            }else{
+                prev.classList.remove('disable');
+                next.classList.remove('disable');
+            }
+            tagsEl.scrollIntoView({behavior : 'smooth'})
+
         }
         else{
             main.innerHTML = `<h1>Nenhum filme encontrado</h1>`
@@ -209,3 +239,33 @@ form.addEventListener('submit', (e) => {
     }
 
 })
+prev.addEventListener('click', () => {
+    if(paginaAnterior> 0){
+        ChamarPagina(paginaAnterior);
+    }
+})
+
+next.addEventListener('click', () => {
+    if(proximaPagina <= totalPaginas){
+        ChamarPagina(proximaPagina);
+    }
+})
+
+function ChamarPagina(page){
+    let urlSplit = ultimaUrl.split('?');
+    let queryParams = urlSplit[1].split('&');
+    let key = queryParams[queryParams.length - 1].split('=');
+    if(key[0]!= 'page'){
+        let url = ultimaUrl + "&page="+page
+        getMovies(url);
+    }else{
+        key[1] = page.toString();
+        let a = key.join('=');
+        queryParams[queryParams.length -1] = a;
+        let b = queryParams.join('&');
+        let url = urlSplit[0] +'?'+ b
+        getMovies(url);
+    }
+
+
+}

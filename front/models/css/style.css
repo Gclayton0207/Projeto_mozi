@@ -147,3 +147,24 @@ main{
 .tag.selecionada{
   background-color: var(--secondary-color);
 }
+.pagination{
+  display: flex;
+  margin: 10px 30px;
+  align-items: center;
+  justify-content:center;
+}
+.page{
+  padding:20px;
+  cursor: pointer;
+}
+.page.disable{
+  cursor: not-allowed;
+  color: grey;
+}
+.atual{
+  padding:10px 20px;
+  border-radius:50%;
+  border:5px solid #FBBE98;
+  font-size:20px;
+  font-weight:600;
+}
