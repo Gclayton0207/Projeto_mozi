@@ -466,3 +466,46 @@ footer p{
 .pt-4 {
     padding-top: 1rem!important;
 }
+@media(max-width:1380px){
+    #infos button{
+        width: 200%;
+        height: 80%;
+    }
+   body{
+        margin-top:10%;
+    }
+}
+@media(max-width:840px){
+    body{
+    margin-top:30%;
+    }
+    #col1 img, #col3 img{ 
+    display: none;
+    }
+
+
+}
+@media(max-width:500px){
+   body{
+       margin-top:30% ;
+   } 
+   div #col2 {
+    width: 100%;
+}
+}
+@media(max-width:430px){
+    body{
+        margin-top:80%;
+    }
+    div #col2 {
+        width: 100%;
+    }
+}
+@media(max-width:270px){
+    body{
+    margin-top: 20rem;
+    }
+        div #col2 {
+            width: 100%;
+        }
+}
