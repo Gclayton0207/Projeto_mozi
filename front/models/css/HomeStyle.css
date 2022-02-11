@@ -445,3 +445,8 @@ form{
 #btnEntrar{
     background-color: rgba(255, 0, 0, 0.87);
 }
+#paginaSemFooter{
+    width: 100%;
+    display: flex;
+    
+}
