@@ -471,19 +471,26 @@ footer p{
         width: 200%;
         height: 80%;
     }
-   body{
-        margin-top:10%;
+ 
+    #col1 img, #col3 img{
+        max-width: 90%;
+        max-height: 90%;
     }
 }
 @media(max-width:840px){
-    body{
-    margin-top:30%;
-    }
-    #col1 img, #col3 img{ 
-    display: none;
+
+    #col3 img{
+        max-width: 110%;
+        max-height: 15%;
     }
 
 
+}
+
+@media (max-width:992px){
+    footer{
+        height: 150%;
+    }
 }
 @media(max-width:500px){
    body{
@@ -500,6 +507,9 @@ footer p{
     div #col2 {
         width: 100%;
     }
+    #col1 img, #col3 img{ 
+        display: none;
+        }
 }
 @media(max-width:270px){
     body{
