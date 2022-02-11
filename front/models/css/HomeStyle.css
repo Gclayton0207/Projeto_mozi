@@ -289,3 +289,20 @@ main {
     right: 35px;
   }
 }
+#col1, #col3, #col2{
+    width: 33.3%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-direction: column;
+    height: 100%;
+  
+}
+#col1 img, #col3 img{ 
+    max-width: 35%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    border: 7px solid brown;
+    border-radius: 5%;
+}
