@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../css/reset.css"> -->
+  <link rel="stylesheet" href="../css/style-landing.css">
+  <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script defer src="../../controllers/js/junior.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+ <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script> -->
+ <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script> 
+  <script defer src="../../controllers/js/form-cep.js"></script>
+  <script defer src="../../controllers/js/form-validacao.js"></script>
+  <title>Landing Page</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a class="navbar-brand" href="./index.html">
+        <img src="../imgs/logo.png" alt="Logo" style="width:80px;">
+      </a>
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./sobre.html">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./recuperacao_Senha.html">Esqueci minha senha</a>
+        </li>
+
+      </ul>
+      <form class="d-flex" id="pesquisa">
+        <input class="form-control me-2" id="search" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </nav>
+  </header>
+
+  <br>
+  <section id="Carrosel">
+    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="1000">
+          <img src="../imgs/avengers.png" class="d-block w-100 h-10 imagem-carrossel-um"
+            alt="Imagem promocional filme Avengers">
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+          <img src="../imgs/fast.jpg" class="d-block w-100 imagem-carrossel-dois"
+            alt="Imagem promocional filme Velozes e Furiosos">
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+          <img src="../imgs/harry.jpg" class="d-block w-100 imagem-carrossel-tres"
+            alt="Imagem promocional filme Harry Potter">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="titulo">
+    <h1 class="text-center fonte-titulo pt-5">Filmes, séries e muito mais! Sem limites!</h1>
+    <p class="text-center text-secondary pb-5">Assista em qualquer lugar. Cancele quando quiser.</p>
+  </section>
+
+  <section class="form-inline p-3 border card" role="form" id='planos'>
+    <div class="row justify-content-center card ms-3">
+
+      <article class="card borda-cor-especial card-largura p-0 m-4 col-4 col-md-4">
+        <img src="../imgs/toyStory.jpg" class="card-img-top card-posicao-imagem" alt="poster Toy Story">
+        <div class="card-body">
+          <h5 class="card-title">Plano Junior</h5>
+          <p class="card-text">Filmes e animações ilimitados para toda a família! </p>
+          <a href="#formulario" class="btn  botao-cor-especial">Assine já!</a>
+        </div>
+      </article>
+
+      <article class="card borda-cor-especial card-largura p-0 m-4 col-4 col-md-4">
+        <img src="../imgs/casaBlanca.jpg" class="card-img-top card-posicao-imagem" alt="Poster do filme Casablanca">
+        <div class="card-body">
+          <h5 class="card-title">Plano Master</h5>
+          <p class="card-text">Filmes clássicos, animações e muito mais!</p>
+          <a href="#formulario" class="btn  botao-cor-especial">Assine já!</a>
+        </div>
+      </article>
+
+      <article class="card borda-cor-especial card-largura p-0 m-4 col-4 col-md-4">
+        <img src="../imgs/johnWick.jpg" class="card-img-top card-posicao-imagem" alt="Poster do filme Jonh Wick">
+        <div class="card-body">
+          <h5 class="card-title">Plano Sênior</h5>
+          <p class="card-text">Filmes, animações e os lançamentos mais recentes!</p>
+          <a href="#formulario" class="btn  botao-cor-especial">Assine já!</a>
+        </div>
+      </article>
+    </div>
+  </section>
+  </br> </br>
+  <h1 class="fonte-titulo formulario-titulo">Vamos lá! </h1>
+  <section id="formulario" class="form-inline  formulario" role="form">
+    <form class="row g-1">
+      <div class="col-md-6">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" class="form-control input" placeholder="Ex: João" id="nome" required>
+        <span class="erro"></span>
+      </div>
+      <div class="col-md-6">
+        <label for="rg" class="form-label">RG</label>
+        <input type="number" class="form-control input" placeholder="Ex: 123456789" id="rg" required>
+        <span class="erro" id="rg-erro"></span>
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control input" placeholder="Ex: joaoMozi@mozi.com" id="email" required>
+        <span class="erro"></span>
+      </div>
+      <div class="col-md-6">
+        <label for="senha" class="form-label">Senha</label>
+        <input type="password" class="form-control input" id="senha" placeholder="Digite sua senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos." required>
+        <span class="erro"></span>
+      </div>
+      <div class="col-md-6">
+        <label for="conofirmasenha" class="form-label">Confirme sua senha</label>
+        <input type="password" class="form-control input" id="confirmasenha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos." required>
+        <span id="erro-senha"></span>
+      </div>
+      <div class="col-md-6">
+        <label for="cep" class="form-label">CEP</label>
+        <input type="number" class="form-control" id="cep" required>
+        <span id="erro-cep"></span>
+      </div>
+      <div class="col-md-6">
+        <label for="inputAddress" class="form-label">Rua</label>
+        <input type="text" class="form-control" id="rua" placeholder="Rua" disabled>
+      </div>
+      <div class="col-md-6">
+        <label for="inputAddress2" class="form-label">Bairro</label>
+        <input type="text" class="form-control" id="bairro" placeholder="Bairro" disabled>
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">Cidade</label>
+        <input type="text" class="form-control" id="cidade" disabled>
+      </div>
+      <div class="col-md-6">
+        <label for="inputState" class="form-label">Estado</label>
+        <input type="text" class="form-control" id="estado" disabled>
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">Número</label>
+        <input type="number" class="form-control" id="Número" required>
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">Complemento</label>
+        <input type="text" class="form-control" id="Complemento">
+      </div>
+      <div class="col-md-6">
+        <label for="inputState" class="form-label">Plano</label>
+        <select id="inputState" class="form-select">
+          <option>Plano Junior</option>
+          <option> Plano Master</option>
+          <option selected>Plano Sênior</option>
+        </select>
+      </div>
+      <div class="col-6">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Li e aceito todos os Termos e Condições de Uso&#174;
+          </label>
+        </div>
+      </div>
+      <div class="col-6">
+        <button class="btn btn-primary" id="enviar">Assinar</button>
+      </div>
+    </form>
+  </section>
+
+  <h1 class="formulario-titulo fonte-titulo">F.A.Q</h1> </br>
+
+  <section class="faq" style="height: 50%; width: 50%; margin-left: 25%;">
+    <div class="accordion" id="accordionExample">
+      <div class="card" style="height: 50%; width: 50%; margin-left: 25%;">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link formulario-titulo fonte-titulo" type="button" data-toggle="collapse"
+              data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              O que é a Mozi
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse show card-block collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            A Mozi é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários
+            premiados em milhares de aparelhos conectados à internet.
+            Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo por um
+            preço
+            mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="height: 50%; width: 50%; margin-left: 25%;">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed formulario-titulo fonte-titulo" type="button" data-toggle="collapse"
+              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Como faço para cancelar?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            A Mozi é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas
+            dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer
+            momento.
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="height: 50%; width: 50%; margin-left: 25%;">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed formulario-titulo fonte-titulo" type="button" data-toggle="collapse"
+              data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Onde posso assistir?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            Assista onde quiser, quando quiser. Use o seu computador ou em qualquer aparelho conectado à Internet
+            compatível com o app Mozi como Smart TVs, smartphones, tablets e videogames.
+            Você também pode baixar a sua série favorita com o aplicativo Mozi!
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class = "comentarios">
+
+    <div class="card borda-cor-especial card-largura p-0 m-4 col-4 col-md-4">
+      <div class="card-header">
+        <img src ="../imgs/lh.png"> 
+      </div>
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p>"Li a documentação e amei o serviço! Mais que pronto!"</p>
+          <footer class="blockquote-footer">Luiz Henrique <cite title="Source Title"></cite></footer>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="card borda-cor-especial card-largura p-0 m-4 col-4 col-md-4">
+      <div class="card-header">
+        <img src ="../imgs/rodrigo.png"> 
+      </div>
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p>"Melhor que Netflix!"</p>
+          <footer class="blockquote-footer">Rodrigo William <cite title=""></cite></footer>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="card borda-cor-especial card-largura p-0 m-4 col-4 col-md-4">
+      <div class="card-header">
+        <img src ="../imgs/rodrigo.png"> 
+      </div>
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p>"Melhor que Netflix!"</p>
+          <footer class="blockquote-footer">Rodrigo William <cite title=""></cite></footer>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="card borda-cor-especial card-largura p-0 m-4 col-4 col-md-4">
+      <div class="card-header">
+        <img src ="../imgs/.png"> 
+      </div>
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p>"Melhor que Netflix!"</p>
+          <footer class="blockquote-footer">Rodrigo William <cite title=""></cite></footer>
+        </blockquote>
+      </div>
+    </div>
+
+
+  </section>
+
+  </main>
+
+</body>
+
+</html>
