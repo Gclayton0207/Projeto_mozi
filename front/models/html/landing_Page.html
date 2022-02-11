@@ -128,12 +128,12 @@
       </div>
       <div class="col-md-6">
         <label for="senha" class="form-label">Senha</label>
-        <input type="password" class="form-control input" id="senha" placeholder="Digite sua senha"  title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos." required>
+        <input type="password" class="form-control input" id="senha" placeholder="Digite sua senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos." required>
         <span class="erro"></span>
       </div>
       <div class="col-md-6">
         <label for="conofirmasenha" class="form-label">Confirme sua senha</label>
-        <input type="password" class="form-control input" id="confirmasenha"  title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos." required>
+        <input type="password" class="form-control input" id="confirmasenha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos." required>
         <span id="erro-senha"></span>
       </div>
       <div class="col-md-6">
