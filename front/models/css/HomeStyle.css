@@ -493,17 +493,15 @@ footer p{
     }
 }
 @media(max-width:500px){
-   body{
+   /* body{
        margin-top:30% ;
-   } 
+   }  */
    div #col2 {
     width: 100%;
 }
 }
 @media(max-width:430px){
-    body{
-        margin-top:80%;
-    }
+ 
     div #col2 {
         width: 100%;
     }
@@ -512,9 +510,7 @@ footer p{
         }
 }
 @media(max-width:270px){
-    body{
-    margin-top: 20rem;
-    }
+ 
         div #col2 {
             width: 100%;
         }
