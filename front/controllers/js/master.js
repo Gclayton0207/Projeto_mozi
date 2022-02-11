@@ -249,7 +249,7 @@ function openNav(movie) {
                     `)
                 }
                     })
-                    var content =`<h1>${movie.original_title}</h1>
+                    var content =`<h1>${movie.title}</h1>
                     <br>
                     ${embed.join('')}
                     <br>
