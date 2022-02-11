@@ -306,3 +306,9 @@ main {
     border: 7px solid brown;
     border-radius: 5%;
 }
+#col3 img{
+    max-width: 70%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
