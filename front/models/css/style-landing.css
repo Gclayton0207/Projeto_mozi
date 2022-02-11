@@ -72,19 +72,23 @@ object-position: 0 5%
 
 
 }
+
+
 .card {
     --color-1: #9488ef;
     --color-2: rgb(28, 0, 48);
     --color-3: #38404b;
-    width: 650px;
-    height: 500px;
+    width: 1000px;
+    height: 550px;
     background: var(--color-3);
     box-shadow: -10px -10px var(--color-1), 15px 10px var(--color-2);
     transition: box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out;
-    margin: 1% auto;
+    margin: 50px auto;
      
     
   }
+
+
   
   .card:hover {
     box-shadow: -10.275px -10.275px var(--color-1), 15.4px 10.275px var(--color-2);
