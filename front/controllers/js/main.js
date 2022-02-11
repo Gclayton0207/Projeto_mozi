@@ -16,3 +16,9 @@ $('#btnEntrar').click(function (event){
         
     }
 })
+
+$('#infos button').click(function(){
+    window.location.replace('./landing_Page.html')
+
+})
+
