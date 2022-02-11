@@ -10,13 +10,11 @@ const confirmaSenha = document.querySelector('#confirmasenha');
 const erroSenha = document.querySelector('#erro-senha');
 
 const checkbox = document.querySelector('#gridCheck');
-console.log(checkbox.validity.valid)
 const erroGeral = document.querySelector('.erro-geral');
 const enviar = document.querySelector('#enviar');
 
-let final = false;
+let formOk = false;
 
-console.log(span)
 // objeto para invalidar numeros repetidos no RG.
 const numRepetidosRg = {
     '0': '0000000000',
@@ -77,20 +75,17 @@ confirmaSenha.addEventListener('blur', () => {
     };
 });
 
-console.log(input)
+// evento que verifica se o input checkbox está marcado
 enviar.addEventListener('click', () => {
-    for (let i = 0; i < input.length; i++) {
-        if (checkbox.checked == false) {
+    if (checkbox.checked == false) {
         return alert('Preencha todos os campos');
-        }  
-    }
-   final = true;
-     
+    };
+    formOk = true;
 });
+// evento que encaminha para a página index
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
-    
-    if(final == true) {
-        location.replace('https://www.google.com/webhp?hl=pt-BR&sa=X&ved=0ahUKEwiAhq7I6vP1AhUSqpUCHX96B64QPAgI');
+    if (formOk == true) {
+        location.replace('../../models/html/index.html');
     }
-})
+});
