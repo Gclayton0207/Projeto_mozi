@@ -1,0 +1,46 @@
+
+.imagem-carrossel {
+    object-fit: cover; 
+    object-position: 0 80%;
+    height: 400px;
+  }
+  
+  .fonte-titulo {
+    font-family: 'Arial', cursive; 
+  }
+  .fonte-titulo-display-4{
+    color: black;
+  } 
+  
+  .carousel-item{
+    color: black;
+  } 
+  
+  .texto-cor-especial {
+    color: #a300a8!important;
+  }
+  
+  .card-largura {
+    max-width: 20rem;
+  }
+  
+  .card-imagem-posicao {
+    height:250px;
+    object-fit:cover;
+    object-position: 0 60%;
+  }
+  
+  
+  .borda-cor-especial {
+    border-color: #860386;
+  }
+  
+  .btn-cor-especial {
+    background-color: #860386;
+    color: white;
+  }
+  .cta{
+      background: url(mozi.png),blueviolet;
+      padding: 120px;
+      background-size: cover;
+     }
