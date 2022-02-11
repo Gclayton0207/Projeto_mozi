@@ -31,7 +31,7 @@
 
         </ul>
         <form class="d-flex" id="pesquisa">
-            <input class="form-control me-2" id="filme" type="search" placeholder="Buscar" aria-label="Search">
+            <input class="form-control me-2" id="search" type="search" placeholder="Buscar" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
     </nav>
@@ -45,7 +45,24 @@
             </div>
         </div>
     </div>
-    <div id="cartaz">
+    <div id="tags"></div>
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content" id="overlay-content"></div>
+
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&lArr;</a>
+
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow">&rArr;</a>
+    </div>
+    <main id="main"></main>
+    <div class="pagination">
+        <div class="page" id="prev">Pagina Anterior</div>
+        <div class="atual" id="atual">1</div>
+        <div class="page" id="next">Proxima Pagina</div>
 
     </div>
 
