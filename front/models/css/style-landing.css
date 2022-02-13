@@ -126,3 +126,12 @@ span {
     transition: box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out;
   
 }
+
+.comentarios{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
