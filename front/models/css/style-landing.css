@@ -16,9 +16,6 @@ body {
   --secondary-color: #9488ef;
 }
 
-
-
-
 **** 
 .cor-fundo{
     background-color: #38404B !important;
@@ -47,7 +44,8 @@ height: 400px;
 
 .fonte-titulo{
 font-family: 'Pacifico', cursive;
-color: #9488EF;   
+color: #9488EF;  
+font-weight: bolder; 
 
 }
 
@@ -58,9 +56,10 @@ color: #9488EF;
 
 .botao-cor-especial{
     background-color: #9488EF;
-    ;
+    
     color:whitesmoke;
 }
+
 .borda-cor-especial{
     border-color: #9488EF ;
 }
@@ -69,8 +68,6 @@ color: #9488EF;
 object-fit: cover;
 height: 300px;
 object-position: 0 5%
-
-
 }
 
 
@@ -88,8 +85,6 @@ object-position: 0 5%
     
   }
 
-
-  
   .card:hover {
     box-shadow: -10.275px -10.275px var(--color-1), 15.4px 10.275px var(--color-2);
     transform: scale(1.025);
@@ -127,5 +122,4 @@ span {
   
 }
 
-.comentarios{
-}
+ 
