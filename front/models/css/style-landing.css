@@ -119,7 +119,6 @@ span {
     background: var(--color-3);
     box-shadow: -10px -10px var(--color-1), 15px 10px var(--color-2);
     transition: box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out;
-  
 }
 
  
