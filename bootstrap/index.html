@@ -1,0 +1,171 @@
+<!--Projeto de Sprint do Modulo 2: Mozi
+Ana Carolina, Giovanni Clayton, Rodrigo William, Wesley, Fernada, Yonathan e Tiago Medeiros-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mozi</title>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand fonte-titulo texto-cor-especial" href="#"><h1>Mozi</h1></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#"><h4>Início</h4><span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#"><h4>Planos</h4></a>
+          <a class="nav-item nav-link" href="#"><h4>Quem somos</h4></a>
+          <a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#modal-contato"><h4>Cadastre-se</h4></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="carrossel">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="spider.jpg" class="imagem-carrossel d-block w-100" alt=" ">
+            <div class="carousel-caption h-50 d-none d-md-block">
+              <h2 class="fonte-titulo display-4">Conheça seus planos!</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="oultimato.jpg" class="imagem-carrossel d-block w-100" alt=" ">
+            <div class="carousel-caption h-50 d-none d-md-block">
+              <h2 class="fonte-titulo display-4">Seu melhor site de Entretenimento</h2>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Mozi</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Seu site de Assinaturas</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="titulo">
+      <div class="text-center py-5 px-2">
+        <h1 class="fonte-titulo texto-cor-especial">Seu site de Streamings</h1>
+        <p class="text-secondary">Assista seus filmes favoritos a um clique de distancia!</p>
+      </div>
+    </section>
+<!--ARTICLES-->
+    <section id="mozimodos" class="bg-light pb-5">
+
+      <div class="container d-flex flex-wrap justify-content-md-around justify-content-center">
+        <article class="card borda-cor-especial card-largura mt-5">
+          <img src="brooklyn.png" class="card-img-top card-imagem-posicao" alt=" ">
+          <div class="card-body">
+            <h4 class="card-title">Filmes principais</h4>
+            <p class="card-text">Os últimos lançamentos em série!!!!!</p>
+            <a href="#" class="btn btn-cor-especial">Assista</a>
+          </div>
+        </article>
+
+        <article class="card borda-cor-especial card-largura mt-5">
+          <img src="lion.png" class="card-img-top card-imagem-posicao" alt=" ">
+          <div class="card-body">
+            <h4 class="card-title">Filmes Família</h4>
+            <p class="card-text">Filmes para assitir com a família inteira!</p>
+            <a href="#" class="btn btn-cor-especial">Assista aqui!</a>
+          </div>
+        </article>
+
+        <article class="card borda-cor-especial card-largura mt-5">
+          <img src="babe.jpg" class="card-img-top card-imagem-posicao" alt=" ">
+          <div class="card-body">
+            <h4 class="card-title">Filmes infantis</h4>
+            <p class="card-text">Filmes para a garotada se divertir!!!!</p>
+            <a href="#" class="btn btn-cor-especial">Assista XD!</a>
+          </div>
+        </article>  
+        
+        <article class="card borda-cor-especial card-largura mt-5">
+          <img src="wonder.png" class="card-img-top card-imagem-posicao" alt=" ">
+          <div class="card-body">
+            <h4 class="card-title">Filmes-Plano VIP Junior</h4>
+            <p class="card-text">Filmes para se divertir!!!!</p>
+            <a href="#" class="btn btn-cor-especial">Assista XD!</a>
+          </div>
+        </article>  
+
+        <article class="card borda-cor-especial card-largura mt-5">
+          <img src="paris.jpg" class="card-img-top card-imagem-posicao" alt=" ">
+          <div class="card-body">
+            <h4 class="card-title">Filmes-Plano VIP Master</h4>
+            <p class="card-text">Filmes para divertir!!!!</p>
+            <a href="#" class="btn btn-cor-especial">Assista XD!</a>
+          </div>
+        </article>  
+
+        <article class="card borda-cor-especial card-largura mt-5">
+          <img src="steve.jpg" class="card-img-top card-imagem-posicao" alt=" ">
+          <div class="card-body">
+            <h4 class="card-title">Filmes- Plano VIP Senior</h4>
+            <p class="card-text">Filmes para divertir!!!!</p>
+            <a href="#" class="btn btn-cor-especial">Assista XD!</a>
+          </div>
+        </article>  
+      </div>   
+  </main>
+
+  <!-- modal -->
+
+<div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <dialog class="modal-content">
+      <header class="modal-header">
+        <h4 class="modal-title" id="exampleModalLabel">Entre em contato</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </header>
+      <article class="modal-body">
+        <form>
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="informe seu nome">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="informe seu e-mail">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="deixe sua mensagem" rows="3"></textarea>
+          </div>
+        </form>
+      </article>
+      
+      <footer class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-cor-especial">Enviar</button>
+      </footer>
+    </dialog>
+  </div>
+</div>
+
+<footer id="footer" class="bg-secondary py-2 mx-auto">
+  <p class="text-center m-0"><a href="#" class="text-light text-decoration-none">contato: ana.couto14091993@gmail.com</a></p>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
