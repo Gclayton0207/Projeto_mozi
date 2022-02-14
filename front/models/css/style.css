@@ -25,7 +25,13 @@ body {
   transition: box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out;
   margin: 1% auto;
 }
-
+.container-section {
+  --color-1: #9488ef;
+  --color-2: rgb(28, 0, 48);
+  --color-3: #38404b;
+  background: var(--color-3);
+  box-shadow: -10px -10px var(--color-1), 15px 10px var(--color-2);
+}
 .card:hover {
   box-shadow: -10.275px -10.275px var(--color-1), 15.4px 10.275px var(--color-2);
   transform: scale(1.025);
