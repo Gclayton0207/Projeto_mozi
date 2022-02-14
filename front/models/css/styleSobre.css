@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+body {
+  background-color: #111927;
+  background-image: radial-gradient(
+      at 47% 33%,
+      hsl(214.74, 15%, 26%) 0,
+      transparent 59%
+    ),
+  radial-gradient(at 82% 65%, hsl(246.99, 76%, 74%) 0, transparent 55%);
+  font-family: "Righteous", cursive;
+}
+
+.card {
+  --color-1: #9488ef;
+  --color-2: rgb(28, 0, 48);
+  --color-3: #38404b;
+  background: var(--color-3);
+  box-shadow: -10px -10px var(--color-1), 15px 10px var(--color-2);
+  transition: box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.025);
+}
+
+.icones {
+  width: 65px;
+  height: 65px;
+  margin-top: 15px;
+}
+
+.icones:hover {
+  transform: scale(1.1);
+}
