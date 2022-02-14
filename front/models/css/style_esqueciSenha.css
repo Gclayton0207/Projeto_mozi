@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+body {
+  background-color: #111927;
+  background-image: radial-gradient(
+      at 47% 33%,
+      hsl(214.74, 15%, 26%) 0,
+      transparent 59%
+    ),
+    radial-gradient(at 82% 65%, hsl(246.99, 76%, 74%) 0, transparent 55%);
+  font-family: "Righteous", cursive;
+  color: white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+  background-attachment:scroll;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.container-section {
+    --color-1: #9488ef;
+    --color-2: rgb(28, 0, 48);
+    --color-3: #38404b;
+    background: var(--color-3);
+    box-shadow: -10px -10px var(--color-1), 15px 10px var(--color-2);
+  }
+
+#enviar {
+    background-color: #fbbe98;
+  }
