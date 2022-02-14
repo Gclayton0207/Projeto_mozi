@@ -298,7 +298,7 @@ main {
     height: 100%;
   
 }
-#col1 img, #col3 img{ 
+#col1 img, #imgDiferente{ 
     max-width: 35%;
     max-height: 100%;
     width: auto;
@@ -306,11 +306,13 @@ main {
     border: 7px solid brown;
     border-radius: 5%;
 }
-#col3 img{
+#harry{
     max-width: 70%;
     max-height: 100%;
     width: auto;
     height: auto;
+    border: 7px solid brown;
+    border-radius: 5%;
 }
 #col2 p {
     text-align: center;
@@ -479,7 +481,7 @@ footer p{
 }
 @media(max-width:840px){
 
-    #col3 img{
+    #imagemDiferente{
         max-width: 110%;
         max-height: 15%;
     }
