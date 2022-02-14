@@ -34,24 +34,26 @@
     </nav>
 
   
-      <section class="position-absolute top-50 bottom-0 start-50 translate-middle" tabindex="-1" role="dialog" id="modalSignin">
+      <section class="position-absolute top-50 start-50 translate-middle" tabindex="-1" role="dialog" id="modalSignin">
         <div class="modal-dialog" role="document">
           <div class="modal-content rounded-5 container-section">
-            <div class="modal-header p-5 pb-4 border-bottom-0">
-              <h2 class="fw-bold mb-0 text-white">Recuperação de senha</h2>
+            <div class="modal-header p-5 pb-4 border-bottom-0 d-flex flex-column">
+              <h3 class="fw-bold mb-4 text-white">Recuperação de senha</h3>
+              <p>Para recuperar a sua senha, informe seu endereço de email que nós enviaremos um link para a alteração da senha.</p>
             </div>
       
             <div class="modal-body p-5 pt-0">
-              <form class="text-center">
+              <form class="text-center" id="formulario">
                 <div class="form-floating mb-1 text-dark">
-                  <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
-                  <label for="floatingInput">Digite seu e-mail</label>
+                  <input type="email" class="form-control rounded-4" id="email" placeholder="name@example.com" >
+                  <label for="floatingInput">E-mail</label>
                   <div class="mt-4">
-                    <span class="text-white" id="msg">
+                    <span id="msg">
                     </span>
+                    <span id="msg2"></span>
                   </div>
                 </div>
-                <button class="w-80 mt-3 btn btn-lg rounded-4 btn-primary" type="submit">Enviar</button>
+                <button class="w-80 mt-3 btn btn-lg rounded-4 btn-primary" id="enviar" type="submit">Enviar</button>
               </form>
             </div>
           </div>
@@ -60,7 +62,7 @@
 
     <footer class="bg-dark text-center text-lg-start fixed-bottom">
         <!-- Grid container -->
-        <div class="container p-4">
+        <div class="container p-0">
             <!--Grid row-->
             <div class="row">
                 <!--Grid column-->
@@ -90,7 +92,7 @@
         <!-- Grid container -->
 
         <!-- Copyright -->
-        <div class="text-center p-3">
+        <div class="text-center p-2">
             © 2022 Copyright:
             <a class="text" href="https://github.com/Gclayton0207/Projeto_mozi">Mozi - grupo 04 - Resilia T13</a>
         </div>
