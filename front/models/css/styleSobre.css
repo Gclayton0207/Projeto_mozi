@@ -9,6 +9,7 @@ body {
     ),
   radial-gradient(at 82% 65%, hsl(246.99, 76%, 74%) 0, transparent 55%);
   font-family: "Righteous", cursive;
+  color: white;
 }
 
 .card {
