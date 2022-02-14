@@ -2,102 +2,104 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/x-icon" href="../imgs/logo.png" />
-    <link rel="stylesheet" href="../css/style.css">
-    <script defer src="../../controllers/js/esqueci-senha.js"></script>
-    <title>Esqueci minha senha</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/x-icon" href="../imgs/logo.png" />
+  <link rel="stylesheet" href="../css/style_esqueciSenha.css">
+  <script defer src="../../controllers/js/esqueci-senha.js"></script>
+  <title>Esqueci minha senha</title>
 </head>
 
 
 <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <a class="navbar-brand" href="./index.html">
-            <img src="../imgs/logo.png" alt="Logo" style="width:80px;">
-        </a>
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./sobre.html">Sobre</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./recuperacao_Senha.html">Esqueci minha senha</a>
-            </li>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="./index.html">
+      <img src="../imgs/logo.png" alt="Logo" style="width:80px;">
+    </a>
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="./index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./sobre.html">Sobre</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./recuperacao_Senha.html">Esqueci minha senha</a>
+      </li>
 
-        </ul>
-    </nav>
+    </ul>
+  </nav>
 
-  
-      <section class="position-absolute top-50 start-50 translate-middle" tabindex="-1" role="dialog" id="modalSignin">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content rounded-5 container-section">
-            <div class="modal-header p-5 pb-4 border-bottom-0 d-flex flex-column">
-              <h3 class="fw-bold mb-4 text-white">Recuperação de senha</h3>
-              <p>Para recuperar a sua senha, informe seu endereço de email que nós enviaremos um link para a alteração da senha.</p>
-            </div>
-      
-            <div class="modal-body p-5 pt-0">
-              <form class="text-center" id="formulario">
-                <div class="form-floating mb-1 text-dark">
-                  <input type="email" class="form-control rounded-4" id="email" placeholder="name@example.com" >
-                  <label for="floatingInput">E-mail</label>
-                  <div class="mt-4">
-                    <span id="msg">
-                    </span>
-                    <span id="msg2"></span>
-                  </div>
+  <main>
+    <section class="" role="dialog" id="modalSignin">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-5 container-section">
+          <div class="modal-header p-5 pb-4 border-bottom-0 d-flex flex-column">
+            <h3 class="fw-bold mb-4 text-white">Recuperação de senha</h3>
+            <p>Para recuperar a sua senha, informe seu endereço de email que nós enviaremos um link para a alteração da
+              senha.</p>
+          </div>
+
+          <div class="modal-body p-5 pt-0">
+            <form class="text-center" id="formulario">
+              <div class="form-floating mb-1 text-dark">
+                <input type="email" class="form-control rounded-4" id="email" placeholder="name@example.com">
+                <label for="floatingInput">E-mail</label>
+                <div class="mt-4">
+                  <span id="msg">
+                  </span>
+                  <span id="msg2"></span>
                 </div>
-                <button class="w-80 mt-3 btn btn-lg rounded-4 btn-primary" id="enviar" type="submit">Enviar</button>
-              </form>
-            </div>
+              </div>
+              <button class="w-80 mt-3 btn btn-lg rounded-4 btn-primary" id="enviar" type="submit">Enviar</button>
+            </form>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+  </main>
 
-    <footer class="bg-dark text-center text-lg-start fixed-bottom">
-        <!-- Grid container -->
-        <div class="container p-0">
-            <!--Grid row-->
-            <div class="row">
-                <!--Grid column-->
-                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Mozi</h5>
+  <footer class="bg-dark text-center text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Mozi</h5>
 
-                    <p>
-                        Levamos o melhor do cinema para o conforto da sua casa!
-                    </p>
-                    </p>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Resilia T13</h5>
-
-                    <p>
-                        Desenvolvido por: Ana Couto, Fernanda Pereira,Giovanni Clayton,Rodrigo William,Tiago
-                        Medeiros,Wesley Rodrigues,Yonathan Rabinovici
-                    </p>
-                </div>
-                <!--Grid column-->
-            </div>
-            <!--Grid row-->
+          <p>
+            Levamos o melhor do cinema para o conforto da sua casa!
+          </p>
+          </p>
         </div>
-        <!-- Grid container -->
+        <!--Grid column-->
 
-        <!-- Copyright -->
-        <div class="text-center p-2">
-            © 2022 Copyright:
-            <a class="text" href="https://github.com/Gclayton0207/Projeto_mozi">Mozi - grupo 04 - Resilia T13</a>
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Resilia T13</h5>
+
+          <p>
+            Desenvolvido por: Ana Couto, Fernanda Pereira,Giovanni Clayton,Rodrigo William,Tiago
+            Medeiros,Wesley Rodrigues,Yonathan Rabinovici
+          </p>
         </div>
-        <!-- Copyright -->
-    </footer>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3">
+      © 2022 Copyright:
+      <a class="text" href="https://github.com/Gclayton0207/Projeto_mozi">Mozi - grupo 04 - Resilia T13</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
 </body>
 
 </html>
