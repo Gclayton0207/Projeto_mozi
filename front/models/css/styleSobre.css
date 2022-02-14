@@ -29,3 +29,7 @@ body {
   height: 65px;
   margin-top: 15px;
 }
+
+.icones:hover {
+  transform: scale(1.1);
+}
