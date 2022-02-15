@@ -36,16 +36,11 @@ height: 400px;
     height: 400px;
 }
 
-.imagem-carrossel-tres {
-    object-fit: cover;
-    object-position: 0 10%;
-    height: 400px;
-}
-
 .fonte-titulo{
-font-family: 'Pacifico', cursive;
-color: #9488EF;  
+color: white;  
 font-weight: bolder; 
+margin-top: 10px;
+margin-bottom: 10px;
 
 }
 
@@ -62,7 +57,7 @@ font-weight: bolder;
     padding: 5px 15px;
     display: inline-flex;
     margin: auto 5%;
-    position: absolute;
+    position: relative;
     color:whitesmoke;
 }
 
@@ -94,14 +89,26 @@ object-position: 0 5%
   .card:hover {
     box-shadow: -10.275px -10.275px var(--color-1), 15.4px 10.275px var(--color-2);
     transform: scale(1.025);
+   
+  }
+
+  .card-img-top{
+    height: 350px;
+  }
+  .card-body{
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   
   }
 
 .formulario{
     --color-1: #9488ef;
     --color-2: rgb(28, 0, 48);
     --color-3: #38404b;
-    width: 1000px;
-    height: 550px;
+    width: 70%;
+    height: 100%;
     background: var(--color-3);
     box-shadow: -10px -10px var(--color-1), 15px 10px var(--color-2);
     transition: box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out;
@@ -110,6 +117,9 @@ object-position: 0 5%
     align-items: center;
     color: whitesmoke;
     padding-left: 15px;
+}
+.form-control{
+  width: 90% !important;
 }
 .formulario-titulo{
    text-align: center;
@@ -127,7 +137,10 @@ span {
     transition: box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out;
 }
 .faq{
-  width: 50%;
+  margin:5% auto;
+  width: 70%;
+  height: 100%;
+
 }
 
 @media screen and (max-height: 450px) {
@@ -138,6 +151,3 @@ span {
 
 
 }
-
-
- 
