@@ -5,19 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="shortcut icon" type="image/x-icon" href="../imgs/logo.png" />
   <link rel="stylesheet" href="../css/style-landing.css">
-  <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script defer src="../../controllers/js/junior.js" defer></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-  </script>
-  <script defer src="../../controllers/js/form-cep.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  <script defer src="../../controllers/js/form-cep.js"></script>
   <script defer src="../../controllers/js/form-validacao.js"></script>
   <title>Landing Page</title>
 </head>
@@ -48,69 +42,71 @@
   </nav>
 </header>
 
-<br>
-<section id="Carrosel">
-  <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="3000">
-        <img src="../imgs/vingadores.jpg" class="d-block w-100 h-10 imagem-carrossel-um"
-          alt="Imagem promocional filme Avengers">
-      </div>
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="../imgs/velozes.jpg" class="d-block w-100 imagem-carrossel-dois"
-          alt="Imagem promocional filme Velozes e Furiosos">
-      </div>
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="../imgs/harry.jpg" class="d-block w-100 imagem-carrossel-tres"
-          alt="Imagem promocional filme Harry Potter">
-      </div>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="2000">
+      <img src="../imgs/vingadores.jpg" class="d-block w-100 imagem-carrossel-um" alt="Vingadores">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="../imgs/velozes.jpg" class="d-block w-100 imagem-carrossel-dois" alt="Velozes e Furiosos">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="../imgs/harry.jpg" class="d-block w-100 imagem-carrossel-um" alt="Harry Potter">
     </div>
   </div>
-</section>
-</br>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 <section id="titulo">
   <h1 class="text-center fonte-titulo pt-5">Filmes, séries e muito mais! Sem limites!</h1>
   <p class="text-center text-secondary pb-5">Assista em qualquer lugar. Cancele quando quiser.</p>
 </section>
 
-<section class="form-inline p-3 border card" role="form" id='planos'>
-  <div class="row justify-content-center card ms-3">
-
-    <article class="card borda-cor-especial card-largura p-0 m-4 col-4 col-md-4">
-      <img src="../imgs/encanato.jpg" class="card-img-top card-posicao-imagem" alt="poster Toy Story">
-      <div class="card-body">
-        <h5 class="card-title">Plano Junior</h5>
-        <p class="card-text">Filmes e animações ilimitados para toda a família! </p>
-        <a href="#formulario" class="btn  botao-cor-especial">Assine já!</a>
+<main class="container-fluid">
+  <div class="row justify-content-around text-white">
+      <div class="card m-4 p-0" style="width: 18rem;">
+          <img src="../imgs/encanato.jpg" class="card-img-top" alt="Encanto">
+          <div class="card-body">
+              <h5 class="card-title">Plano Junior</h5>
+              <p class="card-text">Filmes e animações ilimitados para toda a família!</p>
+              <a href="#formulario" class="btn  botao-cor-especial">Assine já!</a>
+          </div>
       </div>
-    </article>
-
-    <article class="card borda-cor-especial card-largura p-0 m-4 col-4 col-md-4">
-      <img src="../imgs/eovento.jpg" class="card-img-top card-posicao-imagem" alt="Poster do filme Casablanca">
-      <div class="card-body">
-        <h5 class="card-title">Plano Master</h5>
-        <p class="card-text">Filmes clássicos, animações e muito mais!</p>
-        <a href="#formulario" class="btn  botao-cor-especial">Assine já!</a>
+      <div class="card m-4 p-0" style="width: 18rem;">
+          <img src="../imgs/eovento.jpg" class="card-img-top" alt="E o vento levou">
+          <div class="card-body">
+              <h5 class="card-title"> Plano Sênior</h5>
+              <p class="card-text">Filmes, animações e os lançamentos mais recentes!</p>
+              <a href="#formulario" class="btn  botao-cor-especial">Assine já!</a>
+          </div>
       </div>
-    </article>
-
-    <article class="card borda-cor-especial card-largura p-0 m-4 col-4 col-md-4">
-      <img src="../imgs/matrix.jpg" class="card-img-top card-posicao-imagem" alt="Poster do filme Jonh Wick">
-      <div class="card-body">
-        <h5 class="card-title">Plano Sênior</h5>
-        <p class="card-text">Filmes, animações e os lançamentos mais recentes!</p>
-        <a href="#formulario" class="btn  botao-cor-especial">Assine já!</a>
+      <div class="card m-4 p-0" style="width: 18rem;">
+          <img src="../imgs/matrix.jpg" class="card-img-top" alt="Matrix">
+          <div class="card-body">
+              <h5 class="card-title">Plano Master</h5>
+              <p class="card-text">Filmes, animações e os lançamentos mais recentes!</p>
+              <a href="#formulario" class="btn  botao-cor-especial">Assine já!</a>
+          </div>
       </div>
-    </article>
+      </div>
   </div>
-</section>
-</br> </br>
+</main>
 
-<h1 class="formulario-titulo fonte-titulo">F.A.Q</h1> </br>
-
-<section class="faq" style="height: 50%; width: 50%; margin-left: 25%;">
+<h1 class="formulario-titulo fonte-titulo">F.A.Q</h1>
+<section class="faq">
   <div class="accordion" id="accordionExample">
-    <div class="card" style="height: 50%; width: 50%; margin-left: 25%;">
+    <div class="card" style="height: 50%; width: 80%;">
       <div class="card-header" id="headingOne">
         <h5 class="mb-0">
           <button class="btn btn-link formulario-titulo fonte-titulo" type="button" data-toggle="collapse"
@@ -132,7 +128,7 @@
       </div>
     </div>
 
-    <div class="card" style="height: 50%; width: 50%; margin-left: 25%;">
+    <div class="card" style="height: 50%; width: 80%;">
       <div class="card-header" id="headingTwo">
         <h5 class="mb-0">
           <button class="btn btn-link collapsed formulario-titulo fonte-titulo" type="button" data-toggle="collapse"
@@ -150,7 +146,7 @@
       </div>
     </div>
 
-    <div class="card" style="height: 50%; width: 50%; margin-left: 25%;">
+    <div class="card" style="height: 50%; width: 80%;">
       <div class="card-header" id="headingThree">
         <h5 class="mb-0">
           <button class="btn btn-link collapsed formulario-titulo fonte-titulo" type="button" data-toggle="collapse"
@@ -169,8 +165,6 @@
     </div>
   </div>
 </section>
-
-</br>
 
 <h1 class="fonte-titulo formulario-titulo">Vamos lá! </h1>
 <section id="formulario" class="form-inline  formulario" role="form">
@@ -227,20 +221,20 @@
       <label for="inputState" class="form-label">Estado</label>
       <input type="text" class="form-control" id="estado" disabled>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-4">
       <label for="inputZip" class="form-label">Número</label>
       <input type="number" class="form-control input" id="numero" required>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-4">
       <label for="inputCity" class="form-label">Complemento</label>
       <input type="text" class="form-control input" id="Complemento" required>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-4">
       <label for="inputState" class="form-label">Plano</label>
       <select id="inputState" class="form-select">
         <option>Plano Junior (R$9,90/mês)</option>
-        <option> Plano Master (R$14,90/mês)</option>
-        <option selected>Plano Sênior (R$9,90/mês)</option>
+        <option> Plano Sênior (R$14,90/mês)</option>
+        <option selected>Plano Master (R$24,90/mês)</option>
       </select>
     </div>
     <div class="col-6">
@@ -254,128 +248,39 @@
     <div class="text-center">
       <span class="erro-geral"></span>
     </div>
-    <div class="col-6">
-      <button class="btn btn-primary" id="enviar">Assinar</button>
+    <div class="col-12">
+      <button class="btn botao-cor-especial" id="enviar">Assinar</button>
     </div>
   </form>
 </section>
 
-<h1 class="formulario-titulo fonte-titulo justify-content-center ">Comentários</h1> </br>
-
-<h1 class="formulario-titulo fonte-titulo">F.A.Q</h1> </br>
-
-<section class="faq" style="height: 50%; width: 50%; margin-left: 25%;">
-  <div class="accordion" id="accordionExample">
-    <div class="card" style="height: 50%; width: 50%; margin-left: 25%;">
-      <div class="card-header" id="headingOne">
-        <h5 class="mb-0">
-          <button class="btn btn-link formulario-titulo fonte-titulo" type="button" data-toggle="collapse"
-            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            O que é a Mozi
-          </button>
-        </h5>
-      </div>
-
-      <div id="collapseOne" class="collapse show card-block collapse" aria-labelledby="headingOne"
-        data-parent="#accordionExample">
-        <div class="card-body">
-          A Mozi é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários
-          premiados em milhares de aparelhos conectados à internet.
-          Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo por um
-          preço
-          mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.
+  <h1 class="fonte-titulo formulario-titulo">Comentários </h1>
+     <main class="container-fluid">
+        <div class="row justify-content-around text-white">
+            <div class="card m-4 p-0" style="width: 18rem;">
+                <img src="../imgs/lh.png" class="card-img-top" alt="Giovanni">
+                <div class="card-body">
+                    <h5 class="card-title">"Li a documentação e amei o serviço! Mais que pronto!" - Luiz Henrique</h5>
+                </div>
+            </div>
+            <div class="card m-4 p-0" style="width: 18rem;">
+                <img src="../imgs/rodrigo.png" class="card-img-top" alt="Rodrigo">
+                <div class="card-body">
+                    <h5 class="card-title"> "Melhor que Neflix!" - Rodrigo William</h5>
+                </div>
+            </div>
+            <div class="card m-4 p-0" style="width: 18rem;">
+                <img src="../imgs/lu.png" class="card-img-top" alt="Fernanda">
+                <div class="card-body">
+                    <h5 class="card-title">"Parei de ficar até 3h da manhã no discord e agora tô aqui, viciante" - Lu de Copa</h5>
+                </div>
+            </div>
+           
+            </div>
+           
         </div>
-      </div>
-    </div>
-
-    <div class="card" style="height: 50%; width: 50%; margin-left: 25%;">
-      <div class="card-header" id="headingTwo">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed formulario-titulo fonte-titulo" type="button" data-toggle="collapse"
-            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Como faço para cancelar?
-          </button>
-        </h5>
-      </div>
-      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-        <div class="card-body">
-          A Mozi é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas
-          dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer
-          momento.
-        </div>
-      </div>
-    </div>
-
-    <div class="card" style="height: 50%; width: 50%; margin-left: 25%;">
-      <div class="card-header" id="headingThree">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed formulario-titulo fonte-titulo" type="button" data-toggle="collapse"
-            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Onde posso assistir?
-          </button>
-        </h5>
-      </div>
-      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-        <div class="card-body">
-          Assista onde quiser, quando quiser. Use o seu computador ou em qualquer aparelho conectado à Internet
-          compatível com o app Mozi como Smart TVs, smartphones, tablets e videogames.
-          Você também pode baixar a sua série favorita com o aplicativo Mozi!
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="comentarios">
-
-  <div class="card borda-cor-especial card-largura p-0 m-4 col-4 col-md-4 h-75">
-    <div class="card-header">
-      <img src="../imgs/lh.png">
-    </div>
-    <div class="card-body ">
-      <blockquote class="blockquote mb-0">
-        <p>"Li a documentação e amei o serviço! Mais que pronto!"</p>
-        <footer class="blockquote-footer">Luiz Henrique <cite title="Source Title"></cite></footer>
-      </blockquote>
-    </div>
-  </div>
-
-  <div class="card borda-cor-especial card-largura p-0 m-4 col-4 col-md-4 h-75">
-    <div class="card-header">
-      <img src="../imgs/rodrigo.png">
-    </div>
-    <div class="card-body">
-      <blockquote class="blockquote mb-0">
-        <p>"Melhor que Netflix!"</p>
-        <footer class="blockquote-footer">Rodrigo William <cite title=""></cite></footer>
-      </blockquote>
-    </div>
-  </div>
-
-  <div class="card borda-cor-especial card-largura p-0 m-4 col-4 col-md-4">
-    <div class="card-header">
-      <img src="../imgs/rodrigo.png">
-    </div>
-    <div class="card-body">
-      <blockquote class="blockquote mb-0">
-        <p>"Melhor que Netflix!"</p>
-        <footer class="blockquote-footer">Rodrigo William <cite title=""></cite></footer>
-      </blockquote>
-    </div>
-  </div>
-
-  <div class="card borda-cor-especial card-largura p-0 m-4 col-4 col-md-4">
-    <div class="card-header">
-      <img src="../imgs/.png">
-    </div>
-    <div class="card-body">
-      <div class="card-body ">
-        <blockquote class="blockquote mb-0">
-          <p>"Parei de ficar até 3h da manhã no discord e agora tô aqui, viciante"</p>
-          <footer class="blockquote-footer">Lu de Copa<cite title=""></cite></footer>
-        </blockquote>
-      </div>
-    </div>
+    </main>
+  
 </section>
 
 </main>
