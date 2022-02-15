@@ -86,6 +86,9 @@ enviar.addEventListener('click', () => {
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
     if (formOk == true) {
-        location.replace('../../models/html/index.html');
-    }
+        erroGeral.style.display = 'block';
+        erroGeral.style.color = 'greenyellow';
+        erroGeral.innerText = 'Cadastrado com sucesso. Você será redirecionado para página inicial em 5 segundos';
+        setTimeout(() => { location.replace('../../models/html/index.html')}, 5000);
+    };
 });
