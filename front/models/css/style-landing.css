@@ -35,10 +35,14 @@ object-fit: cover;
 object-position: 0 50%;
 height: 400px;
 }
-
 .imagem-carrossel-dois {
+  object-fit: cover;
+  object-position: 0 0%;
+  height: 400px;
+  }
+.imagem-carrossel-tres {
     object-fit: cover;
-    object-position: 0 5%;
+    object-position: 0 0%;
     height: 400px;
 }
 
