@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
-
 body {
   background-color: #111927;
   background-image: radial-gradient(
@@ -10,27 +9,28 @@ body {
     radial-gradient(at 82% 65%, hsl(246.99, 76%, 74%) 0, transparent 55%);
   font-family: "Righteous", cursive;
   color: white;
-  
-}
+   }
 :root{
   --primary-color: #38404B;
   --secondary-color: #9488ef;
 }
-
 **** 
-.navbar{
-  background-color: #333;
-  margin-top: 0;
-  width: 100%;
-
-}
-.cor-fundo{
+/* .cor-fundo{
     background-color: #38404B !important;
+} */
+
+.nav{
+  z-index: 1;
 }
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+} 
 .card-largura{
 max-width: 18rem;
 } 
-
 .imagem-carrossel-um {
 object-fit: cover;
 object-position: 0 50%;
@@ -46,20 +46,15 @@ height: 400px;
     object-position: 0 0%;
     height: 400px;
 }
-
 .fonte-titulo{
 color: white;  
 font-weight: bolder; 
 margin-top: 10px;
 margin-bottom: 10px;
-
 }
-
 .cor-especial{
     color: #9488EF !important;
-
 }
-
 .botao-cor-especial{
     background-color: #9488EF;
     font-size: 16px;
@@ -71,18 +66,14 @@ margin-bottom: 10px;
     position: relative;
     color:whitesmoke;
 }
-
 .borda-cor-especial{
     border-color: #9488EF ;
 }
-
 .card-posicao-imagem{
 object-fit: cover;
 height: 300px;
 object-position: 0 5%
 }
-
-
 .card {
     --color-1: #9488ef;
     --color-2: rgb(28, 0, 48);
@@ -93,27 +84,19 @@ object-position: 0 5%
     box-shadow: -10px -10px var(--color-1), 15px 10px var(--color-2);
     transition: box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out;
     margin: 50px auto;
-     
-    
   }
-
   .card:hover {
     box-shadow: -10.275px -10.275px var(--color-1), 15.4px 10.275px var(--color-2);
     transform: scale(1.025);
-   
   }
-
   .card-img-top{
     height: 350px;
   }
   .card-body{
-
     text-align: center;
     align-items: center;
     justify-content: center;
-   
   }
-
 .formulario{
     --color-1: #9488ef;
     --color-2: rgb(28, 0, 48);
