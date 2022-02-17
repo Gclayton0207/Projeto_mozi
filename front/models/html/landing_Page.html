@@ -1,376 +1,298 @@
 <!DOCTYPE html>
 <br lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  <script defer src="../../controllers/js/form-cep.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  <script defer src="../../controllers/js/form-cep.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="shortcut icon" type="image/x-icon" href="../imgs/logo.png" />
   <link rel="stylesheet" href="../css/style-landing.css">
   <script defer src="../../controllers/js/junior.js" defer></script>
   <script defer src="../../controllers/js/form-validacao.js"></script>
-  <title>Landing Page</title>
+  <title>  Landing Page</title>
 </head>
 
-<body>
-<header>
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"> <img src="../imgs/logo.png" alt="Logo" style="width:80px;"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+ <body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> <img src="../imgs/logo.png" alt="Logo" style="width:80px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./recuperacao_Senha.html">Esqueci minha senha</a>
+          </li>       
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="../imgs/vingadores.jpg" class="d-block w-100 imagem-carrossel-um" alt="Vingadores">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="../imgs/velozes.jpg" class="d-block w-100 imagem-carrossel-dois" alt="Velozes e Furiosos">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="../imgs/harry.jpg" class="d-block w-100 imagem-carrossel-tres" alt="Harry Potter">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <section id="titulo">
+    <h1 class="text-center fonte-titulo pt-5">Filmes, séries e muito mais! Sem limites!</h1>
+    <p class="text-center text-secondary pb-5">Assista em qualquer lugar. Cancele quando quiser.</p>
+  </section>
+  <main class="container-fluid">
+    <div class="row justify-content-around text-white">
+        <div class="card m-4 p-0" style="width: 18rem;">
+            <img src="../imgs/encanato.jpg" class="card-img-top" alt="Encanto">
+            <div class="card-body">
+                <h5 class="card-title">Plano Junior</h5>
+                <p class="card-text">Filmes e animações ilimitados para toda a família!</p>
+                <a href="#formulario" class="btn  botao-cor-especial">Assine já!</a>
+            </div>
+        </div>
+        <div class="card m-4 p-0" style="width: 18rem;">
+            <img src="../imgs/eovento.jpg" class="card-img-top" alt="E o vento levou">
+            <div class="card-body">
+                <h5 class="card-title"> Plano Sênior</h5>
+                <p class="card-text">Filmes, animações e os lançamentos mais recentes!</p>
+                <a href="#formulario" class="btn  botao-cor-especial">Assine já!</a>
+            </div>
+        </div>
+        <div class="card m-4 p-0" style="width: 18rem;">
+            <img src="../imgs/matrix.jpg" class="card-img-top" alt="Matrix">
+            <div class="card-body">
+                <h5 class="card-title">Plano Master</h5>
+                <p class="card-text">Filmes, animações e os lançamentos mais recentes!</p>
+                <a href="#formulario" class="btn  botao-cor-especial">Assine já!</a>
+            </div>
+        </div>
+        </div>
+    </div>
+  </main>
+  <h1 class="formulario-titulo fonte-titulo">F.A.Q</h1>
+  <section class="faq">
+  <div class="accordion " id="accordionExample">
+    <div class="accordion-item ">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          O que é a Mozi
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./sobre.html">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./recuperacao_Senha.html">Esqueci minha senha</a>
-            </li>       
-          </ul>
-          
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>A Mozi é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários
+            premiados em milhares de aparelhos conectados à internet.
+            Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo por um
+            preço
+            mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.</strong>
         </div>
       </div>
-    </nav>
-</header>
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Como faço para cancelar?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>A Mozi é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas
+            dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer</strong>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          A Onde posso assistir?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Assista onde quiser, quando quiser. Use o seu computador ou em qualquer aparelho conectado à Internet
+            compatível com o app Mozi como Smart TVs, smartphones, tablets e videogames.
+            Você também pode baixar a sua série favorita com o aplicativo Mozi!</strong>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="2000">
-      <img src="../imgs/vingadores.jpg" class="d-block w-100 imagem-carrossel-um" alt="Vingadores">
-    </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="../imgs/velozes.jpg" class="d-block w-100 imagem-carrossel-dois" alt="Velozes e Furiosos">
-    </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="../imgs/harry.jpg" class="d-block w-100 imagem-carrossel-tres" alt="Harry Potter">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-<section id="titulo">
-  <h1 class="text-center fonte-titulo pt-5">Filmes, séries e muito mais! Sem limites!</h1>
-  <p class="text-center text-secondary pb-5">Assista em qualquer lugar. Cancele quando quiser.</p>
-</section>
-
-<main class="container-fluid">
-  <div class="row justify-content-around text-white">
-      <div class="card m-4 p-0" style="width: 18rem;">
-          <img src="../imgs/encanato.jpg" class="card-img-top" alt="Encanto">
-          <div class="card-body">
-              <h5 class="card-title">Plano Junior</h5>
-              <p class="card-text">Filmes e animações ilimitados para toda a família!</p>
-              <a href="#formulario" class="btn  botao-cor-especial">Assine já!</a>
+  </section>
+  <h1 class="fonte-titulo formulario-titulo">Vamos lá! </h1>
+  <section id="formulario" class="form-inline  formulario" role="form">
+    <form class="row g-1 form">
+      <div class="col-md-6">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" class="form-control input" placeholder="Ex: João" id="nome" required>
+        <span class="erro"></span>
+      </div>
+      <div class="col-md-6">
+        <label for="rg" class="form-label">RG</label>
+        <input type="number" class="form-control input" placeholder="Ex: 123456789" id="rg" required>
+        <span class="erro" id="rg-erro"></span>
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control input" placeholder="Ex: joao123@mozi.com" id="email" required>
+        <span class="erro"></span>
+      </div>
+      <div class="col-md-6">
+        <label for="senha" class="form-label">Senha</label>
+        <input type="password" class="form-control input" id="senha" placeholder="Digite sua senha"
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
+          title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos."
+          required>
+        <span class="erro"></span>
+      </div>
+      <div class="col-md-6">
+        <label for="conofirmasenha" class="form-label">Confirme sua senha</label>
+        <input type="password" class="form-control input" id="confirmasenha"
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
+          title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos."
+          required>
+        <span id="erro-senha"></span>
+      </div>
+      <div class="col-md-6">
+        <label for="cep" class="form-label">CEP</label>
+        <input type="number" class="form-control input" id="cep" required>
+        <span id="erro-cep"></span>
+      </div>
+      <div class="col-md-6">
+        <label for="inputAddress" class="form-label">Rua</label>
+        <input type="text" class="form-control" id="rua" placeholder="Rua" required disabled>
+      </div>
+      <div class="col-md-6">
+        <label for="inputAddress2" class="form-label">Bairro</label>
+        <input type="text" class="form-control" id="bairro" placeholder="Bairro" disabled>
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">Cidade</label>
+        <input type="text" class="form-control" id="cidade" disabled>
+      </div>
+      <div class="col-md-6">
+        <label for="inputState" class="form-label">Estado</label>
+        <input type="text" class="form-control" id="estado" disabled>
+      </div>
+      <div class="col-md-4">
+        <label for="inputZip" class="form-label">Número</label>
+        <input type="number" class="form-control input" id="numero" required>
+      </div>
+      <div class="col-md-4">
+        <label for="inputCity" class="form-label">Complemento</label>
+        <input type="text" class="form-control input" id="Complemento" required>
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">Plano</label>
+        <select id="inputState" class="form-select">
+          <option>Plano Junior (R$9,90/mês)</option>
+          <option> Plano Sênior (R$14,90/mês)</option>
+          <option selected>Plano Master (R$24,90/mês)</option>
+        </select>
+      </div>
+      <div class="col-6">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck" required>
+          <label class="form-check-label" for="gridCheck">
+            Li e aceito todos os Termos e Condições de Uso&#174;
+          </label>
+        </div>
+      </div>
+      <div class="text-center">
+        <span class="erro-geral"></span>
+      </div>
+      <div class="col-12">
+        <button class="btn botao-cor-especial" id="enviar">Assinar</button>
+      </div>
+    </form>
+  </section>
+    <h1 class="fonte-titulo formulario-titulo">Comentários </h1>
+      <main class="container-fluid">
+          <div class="row justify-content-around text-white">
+              <div class="card m-4 p-0" style="width: 18rem;">
+                  <img src="../imgs/lh.png" class="card-img-top" alt="Giovanni">
+                  <div class="card-body">
+                      <h5 class="card-title">"Li a documentação e amei o serviço!" - Luiz Henrique</h5>
+                  </div>
+              </div>
+              <div class="card m-4 p-0" style="width: 18rem;">
+                  <img src="../imgs/gabriel.jpg" class="card-img-top" alt="Rodrigo">
+                  <div class="card-body">
+                      <h5 class="card-title"> "Simplismente demais!. Dez semanas que não levanto do sofá e nem durmo, só assisto 24 horas por dia." - Gabriel Lopes</h5>
+                  </div>
+              </div>
+              <div class="card m-4 p-0" style="width: 18rem;">
+                  <img src="../imgs/lu.png" class="card-img-top" alt="Fernanda">
+                  <div class="card-body">
+                      <h5 class="card-title">"Parei de ficar até 3h da manhã no discord e agora tô aqui, viciante" - Lu de Copa</h5>
+                  </div>
+              </div>
+            
+              </div>
+            
           </div>
-      </div>
-      <div class="card m-4 p-0" style="width: 18rem;">
-          <img src="../imgs/eovento.jpg" class="card-img-top" alt="E o vento levou">
-          <div class="card-body">
-              <h5 class="card-title"> Plano Sênior</h5>
-              <p class="card-text">Filmes, animações e os lançamentos mais recentes!</p>
-              <a href="#formulario" class="btn  botao-cor-especial">Assine já!</a>
+      </main>
+    
+    </section>
+    </body>
+
+    <footer class="bg-dark text-center text-lg-start">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+      <div class="row">
+          <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Mozi</h5>
+          <p>
+            Levamos o melhor do cinema para o conforto da sua casa!
+          </p>
+          </p>
           </div>
-      </div>
-      <div class="card m-4 p-0" style="width: 18rem;">
-          <img src="../imgs/matrix.jpg" class="card-img-top" alt="Matrix">
-          <div class="card-body">
-              <h5 class="card-title">Plano Master</h5>
-              <p class="card-text">Filmes, animações e os lançamentos mais recentes!</p>
-              <a href="#formulario" class="btn  botao-cor-especial">Assine já!</a>
-          </div>
-      </div>
-      </div>
-  </div>
-</main>
-
-
-<h1 class="formulario-titulo fonte-titulo">F.A.Q</h1>
-<section class="faq">
-<div class="accordion " id="accordionExample">
-  <div class="accordion-item ">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        O que é a Mozi
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>A Mozi é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários
-          premiados em milhares de aparelhos conectados à internet.
-          Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo por um
-          preço
-          mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.</strong>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Como faço para cancelar?
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>A Mozi é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas
-          dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer</strong>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        A Onde posso assistir?
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>Assista onde quiser, quando quiser. Use o seu computador ou em qualquer aparelho conectado à Internet
-          compatível com o app Mozi como Smart TVs, smartphones, tablets e videogames.
-          Você também pode baixar a sua série favorita com o aplicativo Mozi!</strong>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- <section class="faq">
-  <div class="accordion" id="accordionExample">
-    <div class="card" style="height: 50%; width: 80%;">
-      <div class="card-header" id="headingOne">
-        <h5 class="mb-0">
-          <button class="btn btn-link formulario-titulo fonte-titulo" type="button" data-toggle="collapse"
-            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            O que é a Mozi
-          </button>
-        </h5>
-      </div>
-
-      <div id="collapseOne" class="collapse show card-block collapse" aria-labelledby="headingOne"
-        data-parent="#accordionExample">
-        <div class="card-body">
-          A Mozi é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários
-          premiados em milhares de aparelhos conectados à internet.
-          Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo por um
-          preço
-          mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.
+          <!--Grid column-->
+          <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Resilia T13</h5>
+          <p>
+            Desenvolvido por: Ana Couto, Fernanda Pereira,Giovanni Clayton,Rodrigo William,Tiago Medeiros,Wesley
+            Rodrigues,Yonathan Rabinovici
+          </p>
         </div>
+        <!--Grid column-->
       </div>
-    </div>
-
-    <div class="card" style="height: 50%; width: 80%;">
-      <div class="card-header" id="headingTwo">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed formulario-titulo fonte-titulo" type="button" data-toggle="collapse"
-            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Como faço para cancelar?
-          </button>
-        </h5>
+      <!--Grid row-->
       </div>
-      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-        <div class="card-body">
-          A Mozi é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas
-          dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer
-          momento.
-        </div>
+            <!-- Grid container -->
+            <!-- Copyright -->
+      <div class="text-center p-3">
+      © 2022 Copyright:
+      <a class="text" href="https://github.com/Gclayton0207/Projeto_mozi">Mozi - grupo 04 - Resilia T13</a>
       </div>
-    </div>
-
-    <div class="card" style="height: 50%; width: 80%;">
-      <div class="card-header" id="headingThree">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed formulario-titulo fonte-titulo" type="button" data-toggle="collapse"
-            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Onde posso assistir?
-          </button>
-        </h5>
-      </div>
-      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-        <div class="card-body">
-          Assista onde quiser, quando quiser. Use o seu computador ou em qualquer aparelho conectado à Internet
-          compatível com o app Mozi como Smart TVs, smartphones, tablets e videogames.
-          Você também pode baixar a sua série favorita com o aplicativo Mozi!
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<h1 class="fonte-titulo formulario-titulo">Vamos lá! </h1>
-<section id="formulario" class="form-inline  formulario" role="form">
-  <form class="row g-1 form">
-    <div class="col-md-6">
-      <label for="nome" class="form-label">Nome</label>
-      <input type="text" class="form-control input" placeholder="Ex: João" id="nome" required>
-      <span class="erro"></span>
-    </div>
-    <div class="col-md-6">
-      <label for="rg" class="form-label">RG</label>
-      <input type="number" class="form-control input" placeholder="Ex: 123456789" id="rg" required>
-      <span class="erro" id="rg-erro"></span>
-    </div>
-    <div class="col-md-6">
-      <label for="email" class="form-label">Email</label>
-      <input type="email" class="form-control input" placeholder="Ex: joao123@mozi.com" id="email" required>
-      <span class="erro"></span>
-    </div>
-    <div class="col-md-6">
-      <label for="senha" class="form-label">Senha</label>
-      <input type="password" class="form-control input" id="senha" placeholder="Digite sua senha"
-        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
-        title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos."
-        required>
-      <span class="erro"></span>
-    </div>
-    <div class="col-md-6">
-      <label for="conofirmasenha" class="form-label">Confirme sua senha</label>
-      <input type="password" class="form-control input" id="confirmasenha"
-        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
-        title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos."
-        required>
-      <span id="erro-senha"></span>
-    </div>
-    <div class="col-md-6">
-      <label for="cep" class="form-label">CEP</label>
-      <input type="number" class="form-control input" id="cep" required>
-      <span id="erro-cep"></span>
-    </div>
-    <div class="col-md-6">
-      <label for="inputAddress" class="form-label">Rua</label>
-      <input type="text" class="form-control" id="rua" placeholder="Rua" required disabled>
-    </div>
-    <div class="col-md-6">
-      <label for="inputAddress2" class="form-label">Bairro</label>
-      <input type="text" class="form-control" id="bairro" placeholder="Bairro" disabled>
-    </div>
-    <div class="col-md-6">
-      <label for="inputCity" class="form-label">Cidade</label>
-      <input type="text" class="form-control" id="cidade" disabled>
-    </div>
-    <div class="col-md-6">
-      <label for="inputState" class="form-label">Estado</label>
-      <input type="text" class="form-control" id="estado" disabled>
-    </div>
-    <div class="col-md-4">
-      <label for="inputZip" class="form-label">Número</label>
-      <input type="number" class="form-control input" id="numero" required>
-    </div>
-    <div class="col-md-4">
-      <label for="inputCity" class="form-label">Complemento</label>
-      <input type="text" class="form-control input" id="Complemento" required>
-    </div>
-    <div class="col-md-4">
-      <label for="inputState" class="form-label">Plano</label>
-      <select id="inputState" class="form-select">
-        <option>Plano Junior (R$9,90/mês)</option>
-        <option> Plano Sênior (R$14,90/mês)</option>
-        <option selected>Plano Master (R$24,90/mês)</option>
-      </select>
-    </div>
-    <div class="col-6">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck" required>
-        <label class="form-check-label" for="gridCheck">
-          Li e aceito todos os Termos e Condições de Uso&#174;
-        </label>
-      </div>
-    </div>
-    <div class="text-center">
-      <span class="erro-geral"></span>
-    </div>
-    <div class="col-12">
-      <button class="btn botao-cor-especial" id="enviar">Assinar</button>
-    </div>
-  </form>
-</section>
-
-  <h1 class="fonte-titulo formulario-titulo">Comentários </h1>
-     <main class="container-fluid">
-        <div class="row justify-content-around text-white">
-            <div class="card m-4 p-0" style="width: 18rem;">
-                <img src="../imgs/lh.png" class="card-img-top" alt="Giovanni">
-                <div class="card-body">
-                    <h5 class="card-title">"Li a documentação e amei o serviço!" - Luiz Henrique</h5>
-                </div>
-            </div>
-            <div class="card m-4 p-0" style="width: 18rem;">
-                <img src="../imgs/gabriel.jpg" class="card-img-top" alt="Rodrigo">
-                <div class="card-body">
-                    <h5 class="card-title"> "Simplismente demais!. Dez semanas que não levanto do sofá e nem durmo, só assisto 24 horas por dia." - Gabriel Lopes</h5>
-                </div>
-            </div>
-            <div class="card m-4 p-0" style="width: 18rem;">
-                <img src="../imgs/lu.png" class="card-img-top" alt="Fernanda">
-                <div class="card-body">
-                    <h5 class="card-title">"Parei de ficar até 3h da manhã no discord e agora tô aqui, viciante" - Lu de Copa</h5>
-                </div>
-            </div>
-           
-            </div>
-           
-        </div>
-    </main>
-  
-</section>
-
-</main>
-</body>
-<footer class="bg-dark text-center text-lg-start">
-  <!-- Grid container -->
-  <div class="container p-4">
-    <!--Grid row-->
-    <div class="row">
-      <!--Grid column-->
-      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase">Mozi</h5>
-
-        <p>
-          Levamos o melhor do cinema para o conforto da sua casa!
-        </p>
-        </p>
-      </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase">Resilia T13</h5>
-
-        <p>
-          Desenvolvido por: Ana Couto, Fernanda Pereira,Giovanni Clayton,Rodrigo William,Tiago Medeiros,Wesley
-          Rodrigues,Yonathan Rabinovici
-        </p>
-      </div>
-      <!--Grid column-->
-    </div>
-    <!--Grid row-->
-  </div>
-  <!-- Grid container -->
-
-  <!-- Copyright -->
-  <div class="text-center p-3">
-    © 2022 Copyright:
-    <a class="text" href="https://github.com/Gclayton0207/Projeto_mozi">Mozi - grupo 04 - Resilia T13</a>
-  </div>
-  <!-- Copyright -->
-</footer>
-</body>
-
+      <!-- Copyright -->
+    </footer>
 </html>
