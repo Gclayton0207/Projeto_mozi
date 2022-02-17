@@ -40,7 +40,9 @@ for (let i = 0; i < input.length; i++) {
                 span[i].style.display = 'none';
             }
         }
-        catch { }
+        catch {
+            span[3].innerText = 'Por favor digite sua senha'; 
+        }
     });
 };
 
